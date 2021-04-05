@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.util.concurrent.AbstractExecutorService</OriginalElement>
+  <nodes>
+    <node x="0.0" y="160.0">java.util.concurrent.AbstractExecutorService</node>
+    <node x="19.5" y="240.0">java.util.concurrent.ThreadPoolExecutor</node>
+    <node x="184.5" y="0.0">java.util.concurrent.Executor</node>
+    <node x="248.0" y="160.0">java.util.concurrent.ScheduledExecutorService</node>
+    <node x="110.5" y="320.0">java.util.concurrent.ScheduledThreadPoolExecutor</node>
+    <node x="157.0" y="80.0">java.util.concurrent.ExecutorService</node>
+    <node x="0.0" y="395.0">java.util.concurrent.Executors</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.util.concurrent.AbstractExecutorService" target="java.util.concurrent.ExecutorService">
+      <point x="0.0" y="-15.0" />
+      <point x="114.0" y="135.0" />
+      <point x="198.5" y="135.0" />
+      <point x="-41.5" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ScheduledThreadPoolExecutor" target="java.util.concurrent.ThreadPoolExecutor">
+      <point x="-64.75" y="-15.0" />
+      <point x="175.25" y="295.0" />
+      <point x="114.0" y="295.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ScheduledThreadPoolExecutor" target="java.util.concurrent.ScheduledExecutorService">
+      <point x="64.75" y="-15.0" />
+      <point x="304.75" y="295.0" />
+      <point x="366.0" y="295.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ExecutorService" target="java.util.concurrent.Executor">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ThreadPoolExecutor" target="java.util.concurrent.AbstractExecutorService">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="java.util.concurrent.ScheduledExecutorService" target="java.util.concurrent.ExecutorService">
+      <point x="0.0" y="-15.0" />
+      <point x="366.0" y="135.0" />
+      <point x="281.5" y="135.0" />
+      <point x="41.5" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="242.0" y="226.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
