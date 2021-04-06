@@ -15,7 +15,7 @@ public class MyThreadPoolDemo
     public static void main(String[] args)
     {
         System.out.println(Runtime.getRuntime().availableProcessors());
-        
+
         ExecutorService threadPool = new ThreadPoolExecutor(
                 2,
                 5,

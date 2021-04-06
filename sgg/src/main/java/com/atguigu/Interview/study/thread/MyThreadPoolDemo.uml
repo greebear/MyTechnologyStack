@@ -46,8 +46,10 @@
       <point x="41.5" y="15.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="242.0" y="226.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="0.9370786516853933" x="242.0" y="212.5" />
+  <SelectedNodes>
+    <node>java.util.concurrent.AbstractExecutorService</node>
+  </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
