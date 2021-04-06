@@ -12,6 +12,12 @@
 9. 生产上如何设置线程池参数？拒绝策略怎么配？[[笔记]](http://note.youdao.com/s/9aCbZuWc)
 10. 死锁编码及定位分析 [[笔记]](http://note.youdao.com/s/NY1U02JZ)
 
+## JVM
+0. 前提复习 [[笔记]](http://note.youdao.com/s/OK4u7Fg1)
+1. JVM垃圾回收的时候如何确定垃圾？什么是GC Roots？[[笔记]](http://note.youdao.com/s/2nIqV0cH
+)
+2. JVM调优和参数配置？如何查看JVM系统默认值 [[笔记]](http://note.youdao.com/s/71aXsFFk)
+3. JVM常用基本配置参数有哪些？[[笔记]](http://note.youdao.com/s/KQqWfsTc)
 
 ## Readme快捷模版
 [[笔记]]()
