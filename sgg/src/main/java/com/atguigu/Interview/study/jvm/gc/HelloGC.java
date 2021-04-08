@@ -12,6 +12,8 @@ public class HelloGC
         long maxMemory = Runtime.getRuntime().maxMemory(); //返回Java虚拟机试图使用的最大内存量 默认是最大内存的1/4
         System.out.println("TOTAL_MEMORY(-Xms) = "+totalMemory+"(字节)、"+(totalMemory/(double)1024/1024)+"MB");
         System.out.println("MAX_MEMORY(-Xmx) = "+maxMemory+"(字节)、"+(maxMemory/(double)1024/1024)+"MB");
-        Thread.sleep(Integer.MAX_VALUE);
+        // Thread.sleep(Integer.MAX_VALUE);
+        // -Xms10m -Xmx10m -Xss1024k -XX:MetaspaceSize=512m -XX:+PrintCommandLineFlags -XX:+PrintGCDetails -XX:+UseSerialGC
+        byte[] byteArray = new byte[50*1024*1024];
     }
 }

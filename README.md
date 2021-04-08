@@ -18,6 +18,6 @@
 )
 2. JVM调优和参数配置？如何查看JVM系统默认值 [[笔记]](http://note.youdao.com/s/71aXsFFk)
 3. JVM常用基本配置参数有哪些？[[笔记]](http://note.youdao.com/s/KQqWfsTc)
-
+4. 强引用、软引用、弱引用、虚引用分别是什么 [[笔记]](http://note.youdao.com/s/ctgw7ZfX)
 ## Readme快捷模版
 [[笔记]]()
