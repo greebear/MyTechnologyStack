@@ -26,6 +26,13 @@ public class PhantomReferenceDemo
         System.out.println(referenceQueue.poll());
 
         System.out.println("==========================");
+//        o1 = null;
+        System.gc();
+        Thread.sleep(500);
+        System.out.println(o1);
+        System.out.println(phantomReference.get());
+        System.out.println(referenceQueue.poll());
+        System.out.println("==========================");
         o1 = null;
         System.gc();
         Thread.sleep(500);
