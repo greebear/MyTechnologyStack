@@ -1,7 +1,5 @@
 package com.atguigu.Interview.study.javase;
 
-import java.util.Collections;
-
 public class StringInternDemo {
 
     public static void main(String[] args) {
@@ -25,7 +23,7 @@ public class StringInternDemo {
         System.out.println(str2.intern());
         System.out.println(str2 == str2.intern());
 
-        private static Map<Integer,String> map2 = Collections.synchronizedMap(new HashMap<Integer,String>());
+//        private static Map<Integer,String> map2 = Collections.synchronizedMap(new HashMap<Integer,String>());
 
 
     }

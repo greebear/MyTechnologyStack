@@ -1,9 +1,6 @@
 package com.atguigu.algorithm.sort;
 
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import java.util.*;
 
 public class Test
 {
@@ -63,6 +60,19 @@ public class Test
         stack_2.removeLast(); // 出栈 -> 元素 2
         stack_2.removeLast(); // 出栈 -> 元素 1
 
+        // Hashmap
+        System.out.println("=================================Hashmap");
+        HashMap<String, Integer> hashMap = new LinkedHashMap<>();
+        hashMap.put("a",1);
+        System.out.println(hashMap.containsKey("b"));
+        hashMap.merge("a",1, (old_val, new_val)->old_val+new_val);
+        System.out.println(hashMap.get("a"));
+
+        // 整除、求余
+        System.out.println("=================================整除、求余");
+        System.out.println(10/3);
+        System.out.println(10%3);
+        System.out.println((float)10/3);
 
     }
 }
