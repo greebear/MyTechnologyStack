@@ -17,18 +17,9 @@ public static class ListNode {
         ListNode head = new ListNode();
         ListNode before = new ListNode();
         ListNode first_node = head;
-        int l1_val;
         while(l1!=null||l2!=null){
-            if(l1==null) l1_val = 0;
-            else{
-                int l1_val = l1.val;
-            }
-            if(l2==null){
-                int l2_val = 0;
-            }
-            else{
-                int l2_val = l2.val;
-            }
+            int l1_val=l1==null?0:l1.val;
+            int l2_val=l2==null?0:l2.val;
             int tmp_val = l1_val + l2_val + carry;
             head.val = tmp_val%10;
             carry = tmp_val/10;

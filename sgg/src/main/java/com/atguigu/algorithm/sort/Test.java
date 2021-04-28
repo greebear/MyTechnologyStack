@@ -68,11 +68,36 @@ public class Test
         hashMap.merge("a",1, (old_val, new_val)->old_val+new_val);
         System.out.println(hashMap.get("a"));
 
+        // Hashset
+        System.out.println("=================================Hashmset");
+        HashSet<String> hashSet = new HashSet<>();
+        hashSet.add("a");
+        Boolean hashKey = hashSet.contains("a");
+        System.out.println(hashKey);
+
         // 整除、求余
         System.out.println("=================================整除、求余");
         System.out.println(10/3);
         System.out.println(10%3);
         System.out.println((float)10/3);
+
+        // 字符串
+        System.out.println("=================================List中的字符串");
+        String str = "abc";
+        List<String> strList= new LinkedList<>();
+        strList.add(str);
+        strList.toArray(new String[2]);
+        String index_0 = strList.get(0);
+        System.out.println(index_0);
+        System.out.println(strList);
+
+        // 字符串转字符Array
+        System.out.println("=================================字符串转CharArray");
+        char[] c = str.toCharArray();
+        System.out.println(c[2]);
+//        String.valueOf()
+
+
 
     }
 }
