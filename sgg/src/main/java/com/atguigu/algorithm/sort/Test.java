@@ -24,20 +24,21 @@ public class Test
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(1); // 元素 1 入队
         queue.offer(2); // 元素 2 入队
-        System.out.println(queue);
-        System.out.println(queue.peek());
+        System.out.println("queue:\t"+queue);
+        System.out.println("peek:\t"+queue.peek());
         queue.poll();   // 出队 -> 元素 1
         queue.poll();   // 出队 -> 元素 2
 
         System.out.println("=================================双端队列Deque LinkedList<>");
-        Deque<Integer> dequeue = new LinkedList<>();
-        dequeue.offer(1); // 元素 1 入队
-        dequeue.offer(2); // 元素 2 入队
-        System.out.println(dequeue);
-        System.out.println(dequeue.peek());
-        dequeue.poll();   // 出队 -> 元素 1
-        dequeue.poll();   // 出队 -> 元素 2
-        System.out.println(dequeue.peekFirst());
+        Deque<Integer> deque = new LinkedList<>();
+        deque.offer(1); // 元素 1 入队
+        deque.offer(2); // 元素 2 入队
+        System.out.println("deque:\t"+deque);
+        System.out.println("peekFirst:\t"+deque.peekFirst());
+        System.out.println("peekLast:\t"+deque.peekLast());
+        deque.poll();   // 出队 -> 元素 1
+        deque.poll();   // 出队 -> 元素 2
+        System.out.println(deque.peekFirst());
 
 
         // 栈
@@ -96,6 +97,25 @@ public class Test
         char[] c = str.toCharArray();
         System.out.println(c[2]);
 //        String.valueOf()
+
+        // int[]
+        System.out.println("=================================数组int[]");
+        int[] int_array = new int[3];
+        int_array[0] = 1;
+        System.out.println(Arrays.toString(int_array));
+
+        // matrix[][]
+        System.out.println("=================================矩阵matrix[][]");
+        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9},{10,11,12}};
+        System.out.println(matrix.length);
+
+        // 商 余
+        System.out.println("=================================商 余");
+        int sub_a = 5;
+        int sub_b = 2;
+        System.out.println("商:\t"+sub_a/sub_b);
+        System.out.println("余:\t"+sub_a%sub_b);
+        System.out.println("double:\t"+(double)1/3);
 
 
 
