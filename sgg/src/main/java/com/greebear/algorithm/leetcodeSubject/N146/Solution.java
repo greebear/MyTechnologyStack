@@ -89,4 +89,9 @@ class LRUCache {
         removeNode(pre_tail);
         return pre_tail.key;
     }
+
+    public static void main(String[] args)
+    {
+
+    }
 }
