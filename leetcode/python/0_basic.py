@@ -92,10 +92,15 @@ dic["小扣"] # -> 10003
 
 
 # ==========================================堆
+print("="*50+"堆")
 from heapq import heappush, heappop
+import heapq
 
 # 初始化小顶堆
-heap = []
+heap = [10,8,9,10]
+heapq.heapify(heap)
+print(heap)
+
 
 # 元素入堆
 heappush(heap, 1)
@@ -105,7 +110,7 @@ heappush(heap, 6)
 heappush(heap, 8)
 
 # 元素出堆（从小到大）
-heappop(heap) # -> 1
+heappop(heap)  # -> 1
 heappop(heap) # -> 2
 heappop(heap) # -> 4
 heappop(heap) # -> 6

@@ -5,6 +5,7 @@ class DlinkedNode:
         self.pre = None
         self.next = None
 
+
 class LRUCache:
     def __init__(self, capacity):
         # 初始化
@@ -30,7 +31,6 @@ class LRUCache:
             node = self.removeTail()
             self.mySet.pop(node.key)
 
-
     def get(self, key: int):
         if key in self.mySet:
             node = self.mySet.get(key)
@@ -39,7 +39,6 @@ class LRUCache:
             return node.value
         else:
             return -1
-
 
     def addToHead(self, node: DlinkedNode):
         node.pre = self.head
