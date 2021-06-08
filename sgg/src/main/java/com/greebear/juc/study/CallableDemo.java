@@ -17,7 +17,6 @@ import java.util.concurrent.FutureTask;
 
 class MyThread implements Callable<Integer> //Callable接口会抛异常
 {
-
     @Override
     public Integer call() throws Exception
     {
@@ -54,3 +53,4 @@ public class CallableDemo
 
     }
 }
+
