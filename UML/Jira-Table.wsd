@@ -1,0 +1,79 @@
+@startuml
+object jiraissue
+object changegroup
+object customfield
+object customfieldvalue
+object project
+object changeitem
+
+
+map jiraissue{
+    *id => PK
+    pkey => index
+    issuenum => index
+    *project => index
+    reporter => index
+    assignee => index
+    issuestatus => index
+    created => index
+    updated => index
+    duedate => index
+    resolutiondate => index
+    workflow_id => index
+    creator
+    issuetype
+    summary
+    description
+    priority
+    component
+    resolution
+}
+
+map changegroup{
+    id => PK
+    *issueid => index
+    author => index
+    created => index
+}
+
+map customfield{
+    *id => PK
+    cfname
+    description
+}
+
+map customfieldvalue{
+    id => PK
+    issue => index
+    *customfield => index
+    updated
+    parentkey
+    stringvalue
+    numbervalue
+    textvalue
+    datevalue
+    valuetype
+}
+
+map project{
+    *id
+    pname
+    pkey => index
+}
+
+map changeitem{
+    id => PK
+    groupid => index
+    field => index
+    fieldtype
+    oldvalue
+    oldstring
+    newvalue
+    newstring
+}
+
+customfieldvalue .. customfield:customfield=id
+jiraissue .. changegroup:id=issueid
+jiraissue .. project:project=id
+
+@enduml
